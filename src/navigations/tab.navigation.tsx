@@ -11,9 +11,9 @@ export default function TabNavigation() {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarActiveBackgroundColor: colors.secondary,
+        tabBarActiveBackgroundColor: colors.black,
         tabBarActiveTintColor: colors.white,
-        tabBarInactiveBackgroundColor: colors.secondaryLight,
+        tabBarInactiveBackgroundColor: colors.black,
         tabBarInactiveTintColor: colors.white,
       }}
     >

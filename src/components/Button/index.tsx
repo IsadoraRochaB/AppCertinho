@@ -3,15 +3,13 @@ import { TouchableOpacity, Text } from "react-native";
 import { ButtonProps } from "../../interfaces/Button.interface";
 import styles from "./styles";
 
-export default function Button({ onPress, type, title, ...rest }: ButtonProps) {
+export default function Button({ onPress, title, type, ...rest }: ButtonProps) {
   return (
     <TouchableOpacity
       style={
-        type == "primary"
-          ? styles.buttonPrimary
-          : type == "third"
-          ? styles.buttonThird
-          : styles.buttonSecondary
+        type == "black"
+          ? styles.buttonBlack
+          : styles.buttonGrey
       }
       onPress={onPress}
       {...rest}

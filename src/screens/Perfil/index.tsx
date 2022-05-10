@@ -1,47 +1,57 @@
 import React from "react";
-import { View, Text, ImageBackground, Image, TextInput } from "react-native";
-import CardSocial from "../../components/CardSocial";
-import { FontAwesome5 } from "@expo/vector-icons";
+import { View, Text, Image } from "react-native";
 import styles from "./styles";
 import Button from "../../components/Button";
+import { LoginTypes } from "../../types/Screen.types";
+import { MaterialIcons, Entypo } from "@expo/vector-icons";
 
-export default function Perfil() {
+import {
+ 
+  TextInput,
+  
+} from "react-native";
+
+export default function Perfil({ navigation }: LoginTypes) {
+  async function handleSignIn() {
+    console.log("Cadastrar");
+  }
+  function handleLogin() {
+    navigation.navigate("Login");
+  }
+
   return (
-    <ImageBackground
-      source={require("../../assets/fundo.png")}
-      style={styles.container}
-    >
-      <Image source={require("../../assets/lazaro.png")} />
-      <Text style={styles.title}>Lázaro Eduardo da Silva</Text>
-      <CardSocial>
-        <>
-          <FontAwesome5 name="facebook" style={styles.icon} />
-          <TextInput placeholder="https://facebook.com" style={styles.input} />
-        </>
-      </CardSocial>
-      <CardSocial>
-        <>
-          <FontAwesome5 name="instagram" style={styles.icon} />
-          <TextInput placeholder="https://instagram.com" style={styles.input} />
-        </>
-      </CardSocial>
-      <CardSocial>
-        <>
-          <FontAwesome5 name="linkedin" style={styles.icon} />
-          <TextInput placeholder="https://linkedin.com" style={styles.input} />
-        </>
-      </CardSocial>
-      <Button
-        title="Salvar"
-        type="third"
-        onPress={() => console.log("Salvar")}
-      />
-      <Button
-        title="Alterar Senha"
-        type="third"
-        onPress={() => console.log("Alterar Senha")}
-      />
-      <Button title="Sair" type="third" onPress={() => console.log("Sair")} />
-    </ImageBackground>
+    <View style={styles.container}>
+      <View style={styles.image}>
+        <Image source={require("../../assets/Isa.png")} />
+      </View>
+
+      <View style={styles.local}>
+            <MaterialIcons name="email" style={styles.icon} />
+            <TextInput
+              style={styles.input}
+              placeholder="localização"
+              keyboardType="email-address"
+              autoCapitalize="none"
+            />
+          </View>
+
+
+ 
+
+
+
+
+
+      <Text style={styles.title}>NOME</Text>
+      <View style={styles.input}>
+        <Button title="DADOS" type="black" onPress={handleSignIn} />
+        <Button title="PUBLICAR" type="black" onPress={handleSignIn} />
+        <Button title="VOLTAR" type="grey" onPress={handleLogin} />  
+      </View>     
+    </View>
   );
 }
+
+
+       
+    

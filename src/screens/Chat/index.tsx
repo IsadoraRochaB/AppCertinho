@@ -15,7 +15,7 @@ export default function Chat() {
   const renderItem = ({ item }: any) => <Card data={item} />;
   return (
     <ImageBackground
-      source={require("../../assets/fundo.png")}
+      source={require("../../assets/Vector.png")}
       style={styles.container}
     >
       <SafeAreaView style={styles.container}>
