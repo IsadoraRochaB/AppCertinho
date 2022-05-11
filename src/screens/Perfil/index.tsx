@@ -4,6 +4,9 @@ import styles from "./styles";
 import Button from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
 import { MaterialIcons } from "@expo/vector-icons";
+import { Entypo } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import {
  
@@ -26,7 +29,7 @@ export default function Perfil({ navigation }: LoginTypes) {
       </View>
 
       <View style={styles.location}>
-            <MaterialIcons name="email" style={styles.icon} />
+      <Entypo name="location"  style={styles.icon} />
             <TextInput
               style={styles.input}
               placeholder="Localização"
@@ -37,7 +40,7 @@ export default function Perfil({ navigation }: LoginTypes) {
       </View>
 
       <View style={styles.location}>
-            <MaterialIcons name="email" style={styles.icon} />
+            <AntDesign name="phone"  style={styles.icon} />
             <TextInput
               style={styles.input}
               placeholder="Telefone"
@@ -49,7 +52,7 @@ export default function Perfil({ navigation }: LoginTypes) {
 
 
       <View style={styles.location}>
-            <MaterialIcons name="email" style={styles.icon} />
+      <MaterialCommunityIcons name="dog-side"  style={styles.icon} />
             <TextInput
               style={styles.input}
               placeholder="Descrição"

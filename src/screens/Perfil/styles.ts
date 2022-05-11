@@ -26,12 +26,19 @@ const styles = StyleSheet.create({
 
   location: {
     margin: 10,
+    fontSize: 30,
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.grey,
+    borderColor: colors.grey1,
     backgroundColor: colors.white,
     borderRadius: 20,
+  },
+
+  icon: {
+    fontSize: 24,
+    color: colors.grey,
+    padding: 10
   },
 
   title: {
