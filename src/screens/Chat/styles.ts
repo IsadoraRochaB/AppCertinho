@@ -3,15 +3,16 @@ import colors from "../../styles/colors";
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: colors.grey1,
     flex: 1,
-    marginTop: 10,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   rowSearch: {
     flexDirection: 'row',
-    backgroundColor: colors.primaryLight,
-    borderRadius: 10,
-    margin: 10,
+    backgroundColor: colors.white,
+    borderRadius: 20,
+    margin: 40,
     alignItems: 'center',
     width: "80%",
     height: 45,
@@ -21,7 +22,8 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 24,
-    padding: 5
+    padding: 5,
+    color: colors.grey,
   }
 })
 

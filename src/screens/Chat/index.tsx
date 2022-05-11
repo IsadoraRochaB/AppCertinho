@@ -14,14 +14,12 @@ import styles from "./styles";
 export default function Chat() {
   const renderItem = ({ item }: any) => <Card data={item} />;
   return (
-    <ImageBackground
-      source={require("../../assets/Vector.png")}
-      style={styles.container}
-    >
+    
+  
       <SafeAreaView style={styles.container}>
         <View style={styles.rowSearch}>
           <FontAwesome5 name="search" style={styles.icon} />
-          <TextInput placeholder="Pesquisar chat" style={styles.input} />
+          <TextInput placeholder="Pesquisar cidade" style={styles.input} />
         </View>
         <FlatList
           data={data}
@@ -29,6 +27,6 @@ export default function Chat() {
           keyExtractor={(item) => String(item.id)}
         />
       </SafeAreaView>
-    </ImageBackground>
+   
   );
 }

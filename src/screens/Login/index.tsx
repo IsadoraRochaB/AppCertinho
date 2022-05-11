@@ -47,7 +47,10 @@ export default function Login({ navigation }: LoginTypes) {
             />
           </View>
 
+          <View style={styles.butom}>
           <Button title="Login" type="black" onPress={handleSignIn} />
+          </View>
+
           <Button title="Cadastre-se" type="grey" onPress={handleCadastrar} />
         </KeyboardAvoidingView>
         </ImageBackground>

@@ -11,13 +11,16 @@ import Button from "../../components/Button";
 import styles from "./styles";
 import { LoginTypes } from "../../types/Screen.types";
 
+
 export default function Cadastrar({ navigation }: LoginTypes) {
   async function handleSignIn() {
     console.log("Cadastrar");
   }
+  
   function handleLogin() {
     navigation.navigate("Login");
   }
+
 
   return (
     <View style={styles.container}>
@@ -26,7 +29,7 @@ export default function Cadastrar({ navigation }: LoginTypes) {
         style={styles.background}
       >
         <KeyboardAvoidingView>
-          <Text style={styles.title}>Cadastre-se</Text>
+          <Text style={styles.title}>CADASTRE-SE</Text>
           <View style={styles.formRow}>
             <Ionicons name="person" style={styles.icon} />
             <TextInput style={styles.input} placeholder="Nome" />

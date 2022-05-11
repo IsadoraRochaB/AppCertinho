@@ -3,7 +3,7 @@ import { View, Text, Image } from "react-native";
 import styles from "./styles";
 import Button from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
-import { MaterialIcons, Entypo } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 import {
  
@@ -22,19 +22,42 @@ export default function Perfil({ navigation }: LoginTypes) {
   return (
     <View style={styles.container}>
       <View style={styles.image}>
-        <Image source={require("../../assets/Isa.png")} />
+        <Image source={require("../../assets/Union.png")} />
       </View>
 
-      <View style={styles.local}>
+      <View style={styles.location}>
             <MaterialIcons name="email" style={styles.icon} />
             <TextInput
               style={styles.input}
-              placeholder="localização"
+              placeholder="Localização"
               keyboardType="email-address"
+              secureTextEntry={true}
               autoCapitalize="none"
             />
-          </View>
+      </View>
 
+      <View style={styles.location}>
+            <MaterialIcons name="email" style={styles.icon} />
+            <TextInput
+              style={styles.input}
+              placeholder="Telefone"
+              keyboardType="email-address"
+              secureTextEntry={true}
+              autoCapitalize="none"
+            />
+      </View>
+
+
+      <View style={styles.location}>
+            <MaterialIcons name="email" style={styles.icon} />
+            <TextInput
+              style={styles.input}
+              placeholder="Descrição"
+              keyboardType="email-address"
+              secureTextEntry={true}
+              autoCapitalize="none"
+            />
+      </View>
 
  
 
@@ -42,9 +65,8 @@ export default function Perfil({ navigation }: LoginTypes) {
 
 
 
-      <Text style={styles.title}>NOME</Text>
+
       <View style={styles.input}>
-        <Button title="DADOS" type="black" onPress={handleSignIn} />
         <Button title="PUBLICAR" type="black" onPress={handleSignIn} />
         <Button title="VOLTAR" type="grey" onPress={handleLogin} />  
       </View>     

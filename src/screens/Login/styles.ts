@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
 
   butom: {
     borderColor: colors.grey,
+    borderRadius: 90,
   },
   
   title: {
@@ -30,9 +31,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.grey,
     backgroundColor: colors.white,
-    borderRadius: 5,
+    borderColor: colors.black,
+    borderRadius: 20,
   },
   icon: {
     fontSize: 24,

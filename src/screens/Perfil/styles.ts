@@ -4,13 +4,14 @@ import colors from '../../styles/colors'
 const styles = StyleSheet.create({
 
   container: {
-    backgroundColor: colors.lightGrey,
+    backgroundColor: colors.grey1,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   image: {
-    padding: 5
+    padding: 5,
+
   },
 
   local: {
@@ -20,8 +21,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.black,
     backgroundColor: colors.white,
-    borderRadius: 5,
+    borderRadius: 10,
   },
+
+  location: {
+    margin: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: colors.grey,
+    backgroundColor: colors.white,
+    borderRadius: 20,
+  },
+
   title: {
     padding: 5,
     fontSize: 30,

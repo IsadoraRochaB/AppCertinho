@@ -4,12 +4,13 @@ import colors from '../../styles/colors'
 const styles = StyleSheet.create({
   buttonBlack: {
     backgroundColor: colors.black,
-    borderRadius: 5,
+    borderRadius: 20,
     margin: 10
   },
   buttonGrey: {
     backgroundColor: colors.grey,
-    borderRadius: 5,
+    borderColor: colors.black,
+    borderRadius: 20,
     margin: 10
   },
   text: {

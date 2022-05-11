@@ -4,7 +4,7 @@ import colors from '../../styles/colors'
 const styles = StyleSheet.create({
 
 container: {
-    backgroundColor: colors.lightGrey,
+    backgroundColor: colors.grey1,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -25,9 +25,9 @@ container: {
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.grey,
+    borderColor: colors.black,
     backgroundColor: colors.white,
-    borderRadius: 5,
+    borderRadius: 20,
   },
   icon: {
     fontSize: 24,
