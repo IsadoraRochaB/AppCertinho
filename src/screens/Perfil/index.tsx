@@ -1,12 +1,11 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Image } from "react-native";
 import styles from "./styles";
 import Button from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
-import { MaterialIcons } from "@expo/vector-icons";
 import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 
 import {
  
@@ -23,10 +22,25 @@ export default function Perfil({ navigation }: LoginTypes) {
   }
 
   return (
+
+    
     <View style={styles.container}>
-      <View style={styles.image}>
-        <Image source={require("../../assets/Union.png")} />
+      <View style={styles.image}> 
+      <Image source={require("../../assets/Union.png")} />
       </View>
+
+
+      <View style={styles.location}>
+      <Ionicons name="person" style={styles.icon} />
+            <TextInput
+              style={styles.input}
+              placeholder="Nome"
+              keyboardType="email-address"
+              secureTextEntry={true}
+              autoCapitalize="none"
+            />
+      </View>
+
 
       <View style={styles.location}>
       <Entypo name="location"  style={styles.icon} />
@@ -55,23 +69,16 @@ export default function Perfil({ navigation }: LoginTypes) {
       <MaterialCommunityIcons name="dog-side"  style={styles.icon} />
             <TextInput
               style={styles.input}
-              placeholder="Descrição"
+              placeholder="Dados"
               keyboardType="email-address"
               secureTextEntry={true}
               autoCapitalize="none"
             />
       </View>
 
- 
-
-
-
-
-
-
       <View style={styles.input}>
-        <Button title="PUBLICAR" type="black" onPress={handleSignIn} />
-        <Button title="VOLTAR" type="grey" onPress={handleLogin} />  
+        <Button title="Publicar" type="black" onPress={handleSignIn} />
+        <Button title="Voltar" type="grey" onPress={handleLogin} />  
       </View>     
     </View>
   );

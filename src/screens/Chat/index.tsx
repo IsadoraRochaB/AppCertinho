@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FlatList,
-  ImageBackground,
   SafeAreaView,
   TextInput,
   View,
@@ -24,7 +23,7 @@ export default function Chat() {
         <FlatList
           data={data}
           renderItem={renderItem}
-          keyExtractor={(item) => String(item.id)}
+         
         />
       </SafeAreaView>
    

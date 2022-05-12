@@ -4,10 +4,10 @@ export interface CardSocialProps {
 
 export interface CardProps {
   data: {
-    id: number,
+    cidade: string,
     nome: string,
     data: Date,
-    titulo: string,
+    localização: string,
     mensagem: string,
     topico: {
       id: number,

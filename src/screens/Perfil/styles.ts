@@ -11,6 +11,9 @@ const styles = StyleSheet.create({
   },
   image: {
     padding: 5,
+    borderWidth: 2,
+    borderColor: colors.black,
+    borderRadius: 80,
 
   },
 
@@ -30,7 +33,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.grey1,
+    borderColor: colors.black,
     backgroundColor: colors.white,
     borderRadius: 20,
   },
