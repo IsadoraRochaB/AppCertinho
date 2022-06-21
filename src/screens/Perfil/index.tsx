@@ -5,7 +5,9 @@ import Button from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
 import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import { ButtonComp, CardSocialComp } from "../../components";
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
+import { useAuth } from "../../hook/auth";
 
 import {
  
@@ -13,17 +15,12 @@ import {
   
 } from "react-native";
 
-export default function Perfil({ navigation }: LoginTypes) {
-  async function handleSignIn() {
-    console.log("Cadastrar");
-  }
-  function handleLogin() {
-    navigation.navigate("Login");
-  }
+export default function Perfil() {
+  const { user } = useAuth();
 
   return (
 
-    
+
     <View style={styles.container}>
       <View style={styles.image}> 
       <Image source={require("../../assets/Union.png")} />
